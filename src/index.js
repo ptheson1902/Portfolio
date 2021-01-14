@@ -38,5 +38,5 @@ app.use(morgan('combined'));
 router(app);
 
 app.listen(port, () => {
-    console.log(`Server start on Port ${port}`);
+    console.log(`Server start on Port ${port} `);
 });
