@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const handlebars = require('express-handlebars');
 const path = require('path');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const db = require('./config/db');
 
@@ -38,5 +38,5 @@ app.use(morgan('combined'));
 router(app);
 
 app.listen(port, () => {
-    console.log(`App listening at http://localhost:${port}`);
+    console.log(`Server start on Port ${port}`);
 });
