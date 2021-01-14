@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "beauty": "lint-staged",
-    "start": "node src/index.js",
+    "start": "nodemon --inspect src/index.js",
     "start:dev": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -32,6 +32,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "mongoose": "^5.10.15",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6",
     "mongoose-url-slugs": "^1.0.2",
     "popups": "^1.1.3"
   },
