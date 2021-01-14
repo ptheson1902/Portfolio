@@ -33,7 +33,7 @@ body {
     .header .header-bar .logo {
       position: fixed;
       z-index: 1000;
-      left: 5rem;
+      left: 4rem;
       animation: logo 2s 0.2s; }
 
 @keyframes logo {
@@ -43,7 +43,7 @@ body {
     transform: scale(1) translateX(0); } }
     .header .header-bar .menu {
       position: fixed;
-      right: 5rem;
+      right: 4rem;
       z-index: 1000;
       text-align: right;
       cursor: context-menu; }
@@ -71,8 +71,8 @@ body {
   display: none;
   z-index: 10;
   position: relative;
-  width: 0;
   padding-top: 5%;
+  width: 0;
   height: 100vh;
   background: url("../img/img-bg-avatar.png") no-repeat;
   background-size: cover;
@@ -108,6 +108,8 @@ body {
   width: 100%;
   height: 100vh;
   margin-right: 2rem; }
+  .main .avatar-phone {
+    display: none; }
   .main .greeting {
     width: 70%;
     padding-top: 18%;
@@ -247,3 +249,76 @@ body {
       .contact .body .profile a {
         text-decoration: none;
         color: #fff; }
+
+@media all and (max-width: 415px) {
+  .header-bar {
+    margin: -1rem; }
+    .header-bar .logo svg {
+      width: 30px;
+      height: 30px; }
+    .header-bar .menu .icon-menu svg {
+      width: 30px;
+      height: 25px; }
+    .header-bar .menu .icon-menu-click svg {
+      width: 30px;
+      height: 30px; }
+  .nav {
+    padding-top: 20%;
+    position: fixed;
+    right: 0;
+    line-height: 1.5;
+    height: 50%;
+    width: 70%; }
+    .nav .nav-link {
+      margin-left: 0;
+      font-size: 3rem; }
+      .nav .nav-link a {
+        color: #28a745; }
+  .main {
+    text-align: center;
+    justify-content: center;
+    padding-top: 25%;
+    width: 100%;
+    margin-left: 0.1rem; }
+    .main .greeting {
+      width: 100%;
+      padding-top: 0;
+      margin-top: -2rem; }
+      .main .greeting #hello {
+        font-size: 1.5rem; }
+      .main .greeting .social {
+        width: 100%;
+        margin-left: -5%; }
+    .main .avatar {
+      display: none; }
+    .main .avatar-phone {
+      display: block; }
+  .about .background {
+    display: none; }
+  .about .body {
+    padding: 25% 5% 0; }
+    .about .body .row {
+      display: block;
+      margin-bottom: 0; }
+      .about .body .row .greeting {
+        font-size: 0.6rem;
+        border-right: none;
+        border-bottom: 1px dotted #fff;
+        padding-bottom: 1rem; }
+      .about .body .row .education {
+        border-bottom: 1px dotted #fff; }
+        .about .body .row .education p:first-child {
+          font-size: 1rem; }
+      .about .body .row .skills {
+        line-height: 1.5; }
+        .about .body .row .skills .text {
+          font-size: 1rem; }
+      .about .body .row .profile .row {
+        display: flex; }
+        .about .body .row .profile .row .text {
+          width: 50%; }
+          .about .body .row .profile .row .text .text-right {
+            line-height: 0.8;
+            font-size: 0.2rem; }
+        .about .body .row .profile .row .image {
+          width: 50%; } }
