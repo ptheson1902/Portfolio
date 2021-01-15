@@ -500,7 +500,13 @@ body {
                 font-size: 0.5rem;
             }
             .profile{
-                display: none;
+                line-height: 0;
+                text-align: center;
+                margin-top: 1rem;
+                h4{
+                    font-size: 0.8rem;
+                }
+                font-size: 0.6rem;
             }
             button{
                 width: 45%;
