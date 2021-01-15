@@ -474,11 +474,12 @@ body {
             .filter{
                 .btn{
                     font-size: 0.7rem;
-                    padding: 0.2rem 0.4rem;
-                    line-height: 0.8;
+                    padding: 0.1rem 0.2rem;
+                    margin-bottom: 1rem;
                 }
             }
             .project-list{
+                height: 30rem;
                 .project-items{
                     max-width: 100px;
                     width: 100%;
