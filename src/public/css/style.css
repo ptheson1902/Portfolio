@@ -277,7 +277,8 @@ body {
       margin-left: 0;
       font-size: 3rem; }
       .nav .nav-link a {
-        color: #28a745; }
+        color: #000;
+        font-weight: bold; }
   .main {
     text-align: center;
     justify-content: center;
@@ -318,7 +319,7 @@ body {
         border-bottom: 1px dotted #fff;
         line-height: 1.5; }
         .about .body .row .skills .text {
-          font-size: 1rem; }
+          font-size: 0.8rem; }
       .about .body .row .profile .row {
         display: flex;
         margin-top: 1rem; }
@@ -338,4 +339,15 @@ body {
         .about .body .row .profile .row .image {
           width: 50%; }
           .about .body .row .profile .row .image img {
-            width: 100%; } }
+            width: 100%; }
+  .project .body {
+    padding-top: 20%; }
+    .project .body h1 {
+      font-size: 1.5rem; }
+    .project .body .filter .btn {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.4rem;
+      line-height: 0.8; }
+    .project .body .project-list .project-items {
+      max-width: 100px;
+      width: 100%; } }

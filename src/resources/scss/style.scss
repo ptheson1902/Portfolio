@@ -370,7 +370,8 @@ body {
             margin-left: 0;
             font-size: 3rem;
             a{
-                color: #28a745;
+                color: #000;
+                font-weight: bold;
             }
         }
     }
@@ -428,7 +429,7 @@ body {
                     border-bottom: 1px dotted #fff;
                     line-height: 1.5;
                     .text{
-                        font-size: 1rem;
+                        font-size: 0.8rem;
                     }
                     
                 }
@@ -461,6 +462,27 @@ body {
                             }
                         } 
                     }
+            }
+        }
+    }
+    .project{
+        .body{
+            padding-top: 20%;
+            h1{
+                font-size: 1.5rem;
+            }
+            .filter{
+                .btn{
+                    font-size: 0.7rem;
+                    padding: 0.2rem 0.4rem;
+                    line-height: 0.8;
+                }
+            }
+            .project-list{
+                .project-items{
+                    max-width: 100px;
+                    width: 100%;
+                }
             }
         }
     }
