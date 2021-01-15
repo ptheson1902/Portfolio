@@ -299,8 +299,6 @@ body {
       display: none; }
     .main .avatar-phone {
       display: block; }
-  .about .background {
-    display: none; }
   .about .body {
     padding: 20% 5% 0; }
     .about .body .row {
@@ -345,7 +343,7 @@ body {
     .project .body h1 {
       font-size: 1.5rem; }
     .project .body .filter {
-      margin-bottom: 1rem; }
+      margin-bottom: 0.5rem; }
       .project .body .filter .btn {
         font-size: 0.7rem;
         padding: 0.1rem 0.2rem;
@@ -353,4 +351,19 @@ body {
     .project .body .project-list {
       padding-bottom: 35%; }
       .project .body .project-list .project-items {
-        max-width: 20rem; } }
+        max-width: 20rem; }
+  .contact .body {
+    padding: 30% 5% 0; }
+    .contact .body h2 {
+      font-size: 0.8rem; }
+    .contact .body input[type='text'] {
+      padding: 0.3rem;
+      font-size: 0.5rem;
+      width: 45%; }
+    .contact .body textarea {
+      padding: 0.3rem;
+      font-size: 0.5rem; }
+    .contact .body .profile {
+      display: none; }
+    .contact .body button {
+      width: 45%; } }

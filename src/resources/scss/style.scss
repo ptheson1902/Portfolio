@@ -85,7 +85,7 @@ body {
             }
         }
     }
-}
+} //end header
 .nav {
     display: none;
     z-index: 10;
@@ -131,7 +131,7 @@ body {
             transform: translateX(0);
         }
     }
-}
+} //end nav
 
 .main {
     width: 100%;
@@ -186,7 +186,7 @@ body {
             }
         }
     }
-}
+} //end main
 
 .about {
     position: relative;
@@ -222,7 +222,7 @@ body {
             }
         }
     }
-}
+} //end about
 
 .project {
     position: relative;
@@ -267,7 +267,7 @@ body {
             }
         }
     }
-}
+} //end project
 
 .contact {
     position: relative;
@@ -329,7 +329,7 @@ body {
             }
         }
     }
-}
+} //end contact
 
 @media all and (max-width: 415px) {
     .header{
@@ -358,7 +358,7 @@ body {
                 }
             }
         }
-    }
+    } //end header
     .nav{
         padding-top: 15%;
         position: fixed;
@@ -374,7 +374,7 @@ body {
                 font-weight: bold;
             }
         }
-    }
+    } //end nav
     .main{
         text-align: center;
         justify-content: center;
@@ -402,12 +402,9 @@ body {
         }
 
         
-    }
+    } //end main
 
     .about{
-        .background{
-            display: none;
-        }
         .body{
             padding: 20% 5% 0;
             .row{
@@ -464,7 +461,7 @@ body {
                     }
             }
         }
-    }
+    } //end about
     .project{
         .body{
             padding-top: 20%;
@@ -472,7 +469,7 @@ body {
                 font-size: 1.5rem;
             }
             .filter{
-                margin-bottom: 1rem;
+                margin-bottom: 0.5rem;
                 .btn{
                     font-size: 0.7rem;
                     padding: 0.1rem 0.2rem;
@@ -484,6 +481,29 @@ body {
                 .project-items{
                     max-width: 20rem;
                 }
+            }
+        }
+    } //end project
+    .contact{
+        .body{
+            padding: 30% 5% 0;
+            h2{
+                font-size: 0.8rem;
+            }
+            input[type='text']{
+                padding: 0.3rem;
+                font-size: 0.5rem;
+                width: 45%;
+            }
+            textarea{
+                padding: 0.3rem;
+                font-size: 0.5rem;
+            }
+            .profile{
+                display: none;
+            }
+            button{
+                width: 45%;
             }
         }
     }
