@@ -301,7 +301,7 @@ body {
   .about .background {
     display: none; }
   .about .body {
-    padding: 25% 5% 0; }
+    padding: 20% 5% 0; }
     .about .body .row {
       display: block;
       margin-bottom: 0; }
@@ -315,15 +315,27 @@ body {
         .about .body .row .education p:first-child {
           font-size: 1rem; }
       .about .body .row .skills {
+        border-bottom: 1px dotted #fff;
         line-height: 1.5; }
         .about .body .row .skills .text {
           font-size: 1rem; }
       .about .body .row .profile .row {
-        display: flex; }
+        display: flex;
+        margin-top: 1rem; }
         .about .body .row .profile .row .text {
-          width: 50%; }
+          width: 50%;
+          border-right: 1px dotted #fff; }
           .about .body .row .profile .row .text .text-right {
-            line-height: 0.8;
-            font-size: 0.2rem; }
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            line-height: 1.2;
+            padding: 0; }
+            .about .body .row .profile .row .text .text-right .card-title {
+              font-size: 0.7rem; }
+            .about .body .row .profile .row .text .text-right .card-text {
+              font-size: 0.5rem; }
         .about .body .row .profile .row .image {
-          width: 50%; } }
+          width: 50%; }
+          .about .body .row .profile .row .image img {
+            width: 100%; } }

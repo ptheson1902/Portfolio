@@ -408,7 +408,7 @@ body {
             display: none;
         }
         .body{
-            padding: 25% 5% 0;
+            padding: 20% 5% 0;
             .row{
                 display: block;
                 margin-bottom: 0;
@@ -425,6 +425,7 @@ body {
                     }
                 }
                 .skills{
+                    border-bottom: 1px dotted #fff;
                     line-height: 1.5;
                     .text{
                         font-size: 1rem;
@@ -434,16 +435,28 @@ body {
                 .profile{
                         .row{
                             display: flex;
+                            margin-top: 1rem;
                             .text{
                                 width: 50%;
+                                border-right: 1px dotted #fff;
                                 .text-right{
-                                    line-height: 0.8;
-                                    font-size: 0.2rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    line-height: 1.2;
+                                    padding: 0;
+                                    .card-title{
+                                        font-size: 0.7rem;
+                                    }
+                                    .card-text{
+                                        font-size: 0.5rem;
+                                    }
                                 }
                             }
                             .image{
                                 width: 50%;
                                 img{
+                                    width: 100%;
                                 }
                             }
                         } 
