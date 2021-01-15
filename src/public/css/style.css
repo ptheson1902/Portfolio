@@ -353,9 +353,10 @@ body {
       .project .body .project-list .project-items {
         max-width: 20rem; }
   .contact .body {
-    padding: 20% 5% 0; }
+    padding: 25% 5% 0; }
     .contact .body h2 {
-      font-size: 0.8rem; }
+      font-size: 1rem;
+      margin-bottom: 1rem !important; }
     .contact .body input[type='text'] {
       padding: 0.3rem;
       font-size: 0.5rem;
