@@ -406,11 +406,10 @@ body {
     } //end header
     .nav{
         padding-top: 15%;
-        position: fixed;
-        right: 0;
+        margin-left: 100%;
         line-height: 1.2;
         height: 50%;
-        width: 70%;
+        width: 100%;
         .nav-link{
             margin-left: 0;
             font-size: 3rem;
