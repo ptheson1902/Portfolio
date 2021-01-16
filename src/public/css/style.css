@@ -307,7 +307,7 @@ body {
     height: 50%;
     width: 100%; }
     .nav .nav-link {
-      margin-left: 0;
+      margin-left: 100%;
       font-size: 3rem; }
       .nav .nav-link a {
         color: #000;
