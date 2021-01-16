@@ -25,7 +25,6 @@
         var canvas;
         var ctx;
         var particles = [];
-        var raf;
         var mouseX = 0;
         var mouseY = 0;
         var winW;
@@ -459,14 +458,12 @@
         directionX: 'center', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
         directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
         density: 10000, // How many particles will be generated: one particle every n pixels
-        dotColor: '#666666',
-        lineColor: '#666666',
-        particleRadius: 7, // Dot size
-        lineWidth: 1,
+        particleRadius: 5, // Dot size
+        lineWidth: 0.5,
         curvedLines: false,
-        proximity: 100, // How close two dots need to be before they join
+        proximity: 50, // How close two dots need to be before they join
         parallax: true,
-        parallaxMultiplier: 5, // The lower the number, the more extreme the parallax effect
+        parallaxMultiplier: 3, // The lower the number, the more extreme the parallax effect
         onInit: function () {},
         onDestroy: function () {},
     };
@@ -542,8 +539,8 @@ document.addEventListener(
     'DOMContentLoaded',
     function () {
         particleground(document.getElementById('particles'), {
-            dotColor: '#eee',
-            lineColor: '#eee',
+            dotColor: '#00FF00',
+            lineColor: '#FF99FF',
         });
         //var intro = document.getElementById('intro');
         //intro.style.marginTop = - intro.offsetHeight / 2 + 'px';

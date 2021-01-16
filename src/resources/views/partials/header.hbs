@@ -89,12 +89,14 @@
     $('.icon-menu').click(function () {
         $(this).css('display', 'none');
         $('.icon-menu-click').css('display', 'block');
-        $('.nav').css('display', 'block');
+        $('.nav').css('margin-left', '0');
+        $('.nav-link').css('margin-left', '20rem');
     });
 
     $('.icon-menu-click').click(function () {
         $(this).css('display', 'none');
         $('.icon-menu').css('display', 'block');
-        $('.nav').css('display', 'none');
+        $('.nav').css('margin-left', '100%');
+        $('.nav-link').css('margin-left', '100%');
     });
 </script>
