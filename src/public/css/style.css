@@ -424,32 +424,36 @@ body {
   .project-item .body {
     padding-top: 20%; }
     .project-item .body-header .title-text h1 {
-      font-size: 1.5rem; }
+      font-size: 1rem; }
     .project-item .body-header .title-text span {
       font-size: 0.4rem;
       height: 0.8rem; }
     .project-item .body-header .title .menu-icon svg {
       width: 20px; }
-    .project-item .body-header .website a {
-      font-size: 0.5rem;
-      padding: 0.2rem 0.4rem;
+    .project-item .body-header .website {
       margin-bottom: 1rem !important; }
+      .project-item .body-header .website a {
+        font-size: 0.5rem;
+        padding: 0.2rem 0.4rem; }
     .project-item .body-main .card {
-      margin-bottom: 1rem !important; }
+      margin-bottom: 0 !important; }
+      .project-item .body-main .card .card-img {
+        max-height: 200px;
+        width: auto; }
       .project-item .body-main .card .card-body {
         padding-left: 0 !important;
-        font-size: 0.8rem; }
+        font-size: 0.6rem; }
         .project-item .body-main .card .card-body .card-title {
           margin-top: 0.5rem;
-          font-size: 1.5rem; }
+          font-size: 1rem; }
+        .project-item .body-main .card .card-body .card-text {
+          margin-bottom: 1rem !important; }
         .project-item .body-main .card .card-body .item-icon {
           font-size: 0.5rem;
-          width: 30%; }
+          width: 30%;
+          margin-bottom: 1rem !important; }
           .project-item .body-main .card .card-body .item-icon img {
             max-width: 0.6rem; }
-        .project-item .body-main .card .card-body .btn {
-          font-size: 0.5rem;
-          padding: 0.2rem 0.4rem; }
     .project-item .body-main .descriptions {
       font-size: 0.5rem; }
       .project-item .body-main .descriptions h2 {

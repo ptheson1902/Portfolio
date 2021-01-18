@@ -585,7 +585,7 @@ body {
                 .title{
                     &-text{
                         h1{
-                            font-size: 1.5rem;
+                            font-size: 1rem;
                         }
                         span{
                             font-size: 0.4rem;
@@ -599,35 +599,39 @@ body {
                     }
                 }
                 .website{
+                    margin-bottom: 1rem !important;
                     a{
                         font-size: 0.5rem;
                         padding: 0.2rem 0.4rem;
-                        margin-bottom: 1rem !important;
                     }
                 }
             }
             &-main{
                 .card{
-                    margin-bottom: 1rem !important;
+                    margin-bottom: 0 !important;
+                    .card-img{
+                        max-height: 200px;
+                        width: auto;
+                    }
                     .card-body{
                         padding-left: 0 !important;
-                        font-size: 0.8rem;
+                        font-size: 0.6rem;
                         .card-title{
                             margin-top: 0.5rem;
-                            font-size: 1.5rem;
+                            font-size: 1rem;
+                        }
+                        .card-text{
+                            margin-bottom: 1rem !important;
                         }
                         .item-icon{
                             font-size: 0.5rem;
                             width: 30%;
+                            margin-bottom: 1rem !important;
                             img{
                                 max-width: 0.6rem;
                             }
                         }
-                        .btn{
-                            font-size: 0.5rem;
-                            padding: 0.2rem 0.4rem;
-                        }
-                    } 
+                    }
                 }
                 .descriptions{
                     h2{
