@@ -314,6 +314,55 @@ body {
     }
 } //end project
 
+.project-item{
+    position: relative;
+    .background {
+        height: 100vh;
+        font-size: 10rem;
+        position: absolute;
+        top: 30vh;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        overflow: hidden;
+        color: rgba(0, 0, 0, 0.3);
+    }
+    .body{
+        padding-top: 15%;
+        &-header{
+            .title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &-text{
+                    display: flex;
+                    span{
+                        margin-left: 1rem;
+                        padding: 0.1rem 0.5rem;
+                        background-color: #FF77E5;
+                        height: 1.5rem;
+                        border-radius: 8px;
+                    }
+                }
+                .menu-icon{
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        scale: 1.3;
+                    }
+                }
+            }
+        }
+        &-main{
+            .card-img{
+                max-height: 250px;
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
 .contact {
     position: relative;
     .background {
@@ -322,7 +371,6 @@ body {
         position: absolute;
         top: 30vh;
         left: 0;
-        bottom: 0;
         right: 0;
         z-index: -1;
         overflow: hidden;
@@ -529,6 +577,68 @@ body {
             }
         }
     } //end project
+
+    .project-item{
+        .body{
+            padding-top: 20%;
+            &-header{
+                .title{
+                    &-text{
+                        h1{
+                            font-size: 1.5rem;
+                        }
+                        span{
+                            font-size: 0.4rem;
+                            height: 0.8rem;
+                        }
+                    }
+                    .menu-icon{
+                        svg{
+                            width: 20px;
+                        }
+                    }
+                }
+                .website{
+                    a{
+                        font-size: 0.5rem;
+                        padding: 0.2rem 0.4rem;
+                        margin-bottom: 1rem !important;
+                    }
+                }
+            }
+            &-main{
+                .card{
+                    margin-bottom: 1rem !important;
+                    .card-body{
+                        padding-left: 0 !important;
+                        font-size: 0.8rem;
+                        .card-title{
+                            margin-top: 0.5rem;
+                            font-size: 1.5rem;
+                        }
+                        .item-icon{
+                            font-size: 0.5rem;
+                            width: 30%;
+                            img{
+                                max-width: 0.6rem;
+                            }
+                        }
+                        .btn{
+                            font-size: 0.5rem;
+                            padding: 0.2rem 0.4rem;
+                        }
+                    } 
+                }
+                .descriptions{
+                    h2{
+                        font-size: 1rem;
+                    }
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }//end project-item
+
     .contact{
         .body{
             padding: 25% 5% 0;

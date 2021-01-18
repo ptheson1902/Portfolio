@@ -1,1 +1,72 @@
-<h1>{{item.projectName}}</h1>
+<div class="project-item main-fluid">
+    <div class="background">
+        {{item.projectName}}
+    </div>
+    <div class="body">
+        <div class="body-header">
+            <div class="title">
+                <div class="title-text">
+                    <h1 class="text-warning">{{item.projectName}}</h1>
+                    <span>{{item.projectProgress}}</span>
+                </div>
+                <a href="/project" class="menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                        <g id="グループ_82" data-name="グループ 82" transform="translate(-1446 -214)">
+                            <rect id="長方形_29" data-name="長方形 29" width="10" height="10" transform="translate(1446 214)"
+                                fill="#00ff4e" />
+                            <rect id="長方形_32" data-name="長方形 32" width="10" height="10" transform="translate(1446 229)"
+                                fill="#00ff4e" />
+                            <rect id="長方形_35" data-name="長方形 35" width="10" height="10" transform="translate(1446 244)"
+                                fill="#00ff4e" />
+                            <rect id="長方形_30" data-name="長方形 30" width="10" height="10" transform="translate(1461 214)"
+                                fill="#00ff4e" />
+                            <rect id="長方形_33" data-name="長方形 33" width="10" height="10" transform="translate(1461 229)"
+                                fill="#00ff4e" />
+                            <rect id="長方形_36" data-name="長方形 36" width="10" height="10" transform="translate(1461 244)"
+                                fill="#00ff4e" />
+                            <rect id="長方形_31" data-name="長方形 31" width="10" height="10" transform="translate(1476 214)"
+                                fill="#00ff4e" />
+                            <rect id="長方形_34" data-name="長方形 34" width="10" height="10" transform="translate(1476 229)"
+                                fill="#00ff4e" />
+                            <rect id="長方形_37" data-name="長方形 37" width="10" height="10" transform="translate(1476 244)"
+                                fill="#00ff4e" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="website"><a href="#" class="btn btn-outline-danger mb-5">Visit Website</a></div>
+        </div>
+        <div class="body-main">
+            <div class="card mb-5" style="background-color: transparent; border: none">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="/img/{{item.projectImage}}" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body pl-5" style="padding: 0;">
+                            <h3 class="card-title">Technical Sheet</h3>
+                            <p class="card-text mb-4">Code technologies I got involved with while working on this
+                                project.
+                            </p>
+                            <div class="d-flex justify-content-between" style="flex-wrap: wrap;">
+                                {{#each item.codeTechnologies}}
+                                <div class="item-icon mb-4" style="width: 20%;">
+                                    <img src="/img/Icon awesome-{{this}}.svg" alt="">
+                                    {{this}}
+                                </div>
+                                {{/each}}
+                            </div>
+                            <a href="#" class="btn btn-outline-warning">Resources</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="descriptions" style="line-height: 1.8;">
+                <h2>About This Project:</h2>
+                <p>&nbsp;&nbsp;{{item.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/script.js"></script>

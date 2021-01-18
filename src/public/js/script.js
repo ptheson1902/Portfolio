@@ -24,6 +24,7 @@
         var canvasSupport = !!document.createElement('canvas').getContext;
         var canvas;
         var ctx;
+        var raf;
         var particles = [];
         var mouseX = 0;
         var mouseY = 0;
