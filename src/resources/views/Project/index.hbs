@@ -1,0 +1,88 @@
+<div class="project main-fluid">
+    <div class="background">
+        PROJECT
+    </div>
+    <div class="body">
+
+        <h1 class="ml-2">WEB DEVELOPER PROJECT</h1>
+        <p class="ml-2" class="ml-2">Filter project by:</p>
+        <div class="row filter mb-4">
+            <div class="btn-group-toggle active" data-toggle="buttons">
+                <label class="btn btn-outline-success">
+                    <input type="checkbox"> Show All
+                </label>
+
+                <label class="btn btn-outline-success">
+                    <input type="checkbox"> HTML5
+                </label>
+
+                <label class="btn btn-outline-success">
+                    <input type="checkbox"> CSS3
+                </label>
+
+                <label class="btn btn-outline-success">
+                    <input type="checkbox"> SASS
+                </label>
+
+                <label class="btn btn-outline-success">
+                    <input type="checkbox"> Bootstrap
+                </label>
+
+                <label class="btn btn-outline-success">
+                    <input type="checkbox"> NodeJS
+                </label>
+
+                <label class="btn btn-outline-success">
+                    <input type="checkbox"> ReactJS
+                </label>
+
+                <label class="btn btn-outline-success">
+                    <input type="checkbox"> PHP
+                </label>
+
+                <label class="btn btn-outline-success">
+                    <input type="checkbox"> MySQL
+                </label>
+
+                <label class="btn btn-outline-success">
+                    <input type="checkbox"> MongoDB
+                </label>
+            </div>
+        </div>
+        <div class="project-list" style="overflow-y:auto; height:40rem; overflow-x:hidden;">
+            <div class="row justify-content-around">
+
+                {{#each projects}}
+                <div class="card bg-dark text-white mb-4 project-items"
+                    style="border:none; box-shadow:3px 4px 6px #333; max-width:350px; positon:relative">
+                    <img src="img/{{this.projectImage}}" class="card-img item-image" alt="..." height="250">
+                    <div class="card-img-overlay item-profile"
+                        style="overflow-y: auto; overflow-x:hidden; padding: 1rem 0 1rem 2rem">
+
+                        <div class="item-profile-icon">
+                            <h5 class="card-title" style="font-weight:bold; color:aqua">{{this.projectName}} -
+                                <span>{{this.projectProgress}}</span>
+                            </h5>
+                            <div class="row justify-content-start">
+
+                                {{#each this.codeTechnologies}}
+                                <div class="item-icon mb-2">
+                                    <img src="img/Icon awesome-{{this}}.svg" alt="">
+                                    {{this}}
+                                </div>
+                                {{/each}}
+
+                            </div>
+                            <p class="mt-2"><a href="/project/{{this._id}}" class="btn btn-danger">View More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
