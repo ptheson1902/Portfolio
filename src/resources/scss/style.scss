@@ -294,7 +294,10 @@ body {
             }
             .project-items {
                 &:hover > .item-profile > .item-profile-icon {
-                    display: block;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    height: 100%;
                 }
                 &:hover > .item-profile > .card-title {
                     color: salmon;

@@ -3,15 +3,32 @@ const { mongooseToObject } = require('../../ulti/mongoose');
 const { multipleMongooseToObject } = require('../../ulti/mongoose');
 
 class ProjectController {
-    // [GET] /project
+    // [GET, POST] /project
     project(req, res, next) {
-        Projects.find({})
-            .then((projects) => {
-                res.render('Project', {
-                    projects: multipleMongooseToObject(projects),
-                });
-            })
-            .catch(next);
+        var data = req.body;
+        if(Object.keys(data).length === 0){
+            Projects.find({})
+                .then((projects) => {
+                    res.render('Project/', {
+                        projects: multipleMongooseToObject(projects),
+                    });
+                })
+                .catch(next);
+        }else{
+            if(data.data[0] == 'all'){
+                Projects.find({})
+                    .then((projects) => {
+                        res.send(projects)
+                    })
+                    .catch(next);
+            }else{
+                Projects.find({ codeTechnologies : { '$all' : data.data} })
+                    .then((projects) => {
+                        res.send(projects);
+                    })
+                    .catch(next);
+            }
+        }
     }
 
     // [GET] /project/:slug
