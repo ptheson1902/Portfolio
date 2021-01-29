@@ -228,7 +228,10 @@ body {
     .project .body .project-list .item-icon {
       width: 50%; }
     .project .body .project-list .project-items:hover > .item-profile > .item-profile-icon {
-      display: block; }
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100%; }
     .project .body .project-list .project-items:hover > .item-profile > .card-title {
       color: salmon; }
     .project .body .project-list .project-items:hover > .item-image {

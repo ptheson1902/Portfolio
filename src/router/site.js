@@ -6,8 +6,6 @@ router.get('/about', siteController.about);
 
 router.get('/contact', siteController.contact);
 
-router.get('/:slug', siteController.test);
-
 router.get('/', siteController.index);
 
 module.exports = router;

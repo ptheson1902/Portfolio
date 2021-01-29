@@ -10,10 +10,6 @@ class SiteController {
         res.render('about');
     }
 
-    test(req, res, next) {
-        res.render('test');
-    }
-
     contact(req, res, next) {
         res.render('contact');
     }
