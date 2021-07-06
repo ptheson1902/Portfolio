@@ -15,6 +15,14 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.mouse{
+    position: absolute;
+    background-color: transparent;
+    z-index: -1000;
+    top:0;
+    left: 0;
+}
+
 #particles {
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
