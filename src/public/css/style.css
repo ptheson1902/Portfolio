@@ -5,7 +5,7 @@ body {
   overflow: hidden;
   font-family: "Courier New", arial;
   font-style: italic;
-  color: #fff;
+  color: #000;
   line-height: 1.3;
   -webkit-font-smoothing: antialiased; }
 
@@ -35,7 +35,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1000; }
   .header .header-bar {
     width: 100%;
     display: flex;
@@ -43,6 +44,9 @@ body {
     .header .header-bar .logo {
       animation: logo 2s 0.2s;
       margin: 2rem 3rem; }
+      .header .header-bar .logo svg {
+        fill: #28a745;
+        stroke: #28a745; }
 
 @keyframes logo {
   0% {
@@ -91,10 +95,10 @@ body {
     transition: 1s ease-in-out;
     cursor: alias; }
     .nav .nav-link a {
-      color: #fff;
+      color: #000;
       text-decoration: none; }
     .nav .nav-link:hover {
-      text-decoration: underline solid #fff;
+      text-decoration: underline solid #000;
       transition: 1s ease-in-out; }
   .nav .nav-link:nth-child(1) {
     transition-delay: 1s; }
@@ -113,13 +117,13 @@ body {
   .main .avatar-phone {
     display: none; }
   .main .greeting {
-    height: 40%;
+    height: 50%;
     display: flex;
     flex-wrap: wrap; }
     .main .greeting #hello {
       width: 100%;
-      font-size: 2.5rem;
-      text-decoration: underline #fff solid;
+      font-size: 2.4rem;
+      text-decoration: underline #000 dotted;
       line-height: 1.8;
       height: 30%; }
     .main .greeting .viewProject {
@@ -127,7 +131,7 @@ body {
       background-color: #0058ff;
       padding: 10px 15px;
       border-radius: 20px;
-      color: #fff; }
+      color: #000; }
       .main .greeting .viewProject:hover {
         background-color: rgba(0, 0, 0, 0.5);
         transition: 0.25s ease-in-out;
@@ -146,6 +150,8 @@ body {
     display: flex;
     align-items: center;
     animation: avatar 9s ease-in-out; }
+    .main .avatar img {
+      border-radius: 50%; }
 
 @keyframes avatar {
   0% {
@@ -182,7 +188,7 @@ body {
       line-height: 1.8;
       margin-bottom: 10%; }
       .about .body .row .greeting {
-        border-right: 1px dotted #fff;
+        border-right: 1px dotted #000;
         animation: greeting 3s ease-in-out; }
 
 @keyframes greeting {
@@ -305,32 +311,32 @@ body {
       background-color: rgba(0, 0, 0, 0);
       border: none;
       border-bottom: 2px solid #000;
-      color: #fff;
+      color: #000;
       font-size: 1.2rem;
       padding: 10px;
       outline: none; }
       .contact .body input[type="text"]:focus,
       .contact .body textarea:focus {
-        border: 2px solid #fff;
+        border: 2px solid #000;
         transition: 0.25s ease-in-out; }
     .contact .body .btn-contact {
       border: 2px solid #000;
       height: 3rem;
-      color: #fff;
+      color: #000;
       background-color: rgba(0, 0, 0, 0); }
       .contact .body .btn-contact:hover {
-        border-color: #fff;
+        border-color: #000;
         color: red;
         transition: 0.3s ease-in-out; }
     .contact .body .profile {
-      border: 2px solid #fff; }
+      border: 2px solid #000; }
       .contact .body .profile:hover {
         border-color: #28a745; }
       .contact .body .profile h4 {
         color: wheat; }
       .contact .body .profile a {
         text-decoration: none;
-        color: #fff; }
+        color: #000; }
 
 @media all and (max-width: 415px) {
   .row {
@@ -363,8 +369,7 @@ body {
     display: flex;
     justify-content: center; }
     .main .greeting {
-      margin-top: -3rem;
-      height: 30%;
+      margin-top: -5rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -381,7 +386,10 @@ body {
     .main .avatar {
       display: none; }
     .main .avatar-phone {
-      display: block; }
+      display: block;
+      text-align: center; }
+      .main .avatar-phone img {
+        border-radius: 10%; }
   .about .body {
     padding: 20% 5% 0; }
     .about .body .row {
@@ -390,14 +398,14 @@ body {
       .about .body .row .greeting {
         font-size: 0.6rem;
         border-right: none;
-        border-bottom: 1px dotted #fff;
+        border-bottom: 1px dotted #000;
         padding-bottom: 1rem; }
       .about .body .row .education {
-        border-bottom: 1px dotted #fff; }
+        border-bottom: 1px dotted #000; }
         .about .body .row .education p:first-child {
           font-size: 1rem; }
       .about .body .row .skills {
-        border-bottom: 1px dotted #fff;
+        border-bottom: 1px dotted #000;
         line-height: 1.5;
         padding-bottom: 1rem; }
         .about .body .row .skills .text {
@@ -407,7 +415,7 @@ body {
         margin-top: 1rem; }
         .about .body .row .profile .row .text {
           width: 50%;
-          border-right: 1px dotted #fff; }
+          border-right: 1px dotted #000; }
           .about .body .row .profile .row .text .text-right {
             display: flex;
             justify-content: center;
@@ -423,7 +431,7 @@ body {
           .about .body .row .profile .row .image img {
             width: 100%; }
   .project .body {
-    padding-top: 20%; }
+    padding: 20% 5%; }
     .project .body h1 {
       font-size: 1.5rem; }
     .project .body .filter {
@@ -436,43 +444,41 @@ body {
       padding-bottom: 35%; }
       .project .body .project-list .project-items {
         width: 100%; }
-  .project-item .body {
-    padding-top: 20%; }
-    .project-item .body-header .title-text h1 {
-      font-size: 1rem; }
-    .project-item .body-header .title-text span {
-      font-size: 0.4rem;
-      height: 0.8rem; }
-    .project-item .body-header .title .menu-icon svg {
-      width: 20px; }
-    .project-item .body-header .website {
-      margin-bottom: 1rem !important; }
-      .project-item .body-header .website a {
-        font-size: 0.5rem;
-        padding: 0.2rem 0.4rem; }
-    .project-item .body-main .card {
-      margin-bottom: 0 !important; }
-      .project-item .body-main .card .card-img {
-        max-height: 200px;
-        width: auto; }
-      .project-item .body-main .card .card-body {
-        padding-left: 0 !important;
-        font-size: 0.6rem; }
-        .project-item .body-main .card .card-body .card-title {
-          margin-top: 0.5rem;
-          font-size: 1rem; }
-        .project-item .body-main .card .card-body .card-text {
-          margin-bottom: 1rem !important; }
-        .project-item .body-main .card .card-body .item-icon {
-          font-size: 0.5rem;
-          width: 30%;
-          margin-bottom: 1rem !important; }
-          .project-item .body-main .card .card-body .item-icon img {
-            max-width: 0.6rem; }
-    .project-item .body-main .descriptions {
-      font-size: 0.5rem; }
-      .project-item .body-main .descriptions h2 {
+  .project-item .body-header .title-text h1 {
+    font-size: 1rem; }
+  .project-item .body-header .title-text span {
+    font-size: 0.4rem;
+    height: 0.8rem; }
+  .project-item .body-header .title .menu-icon svg {
+    width: 20px; }
+  .project-item .body-header .website {
+    margin-bottom: 1rem !important; }
+    .project-item .body-header .website a {
+      font-size: 0.5rem;
+      padding: 0.2rem 0.4rem; }
+  .project-item .body-main .card {
+    margin-bottom: 0 !important; }
+    .project-item .body-main .card .card-img {
+      max-height: 200px;
+      width: auto; }
+    .project-item .body-main .card .card-body {
+      padding-left: 0 !important;
+      font-size: 0.6rem; }
+      .project-item .body-main .card .card-body .card-title {
+        margin-top: 0.5rem;
         font-size: 1rem; }
+      .project-item .body-main .card .card-body .card-text {
+        margin-bottom: 1rem !important; }
+      .project-item .body-main .card .card-body .item-icon {
+        font-size: 0.5rem;
+        width: 30%;
+        margin-bottom: 1rem !important; }
+        .project-item .body-main .card .card-body .item-icon img {
+          max-width: 0.6rem; }
+  .project-item .body-main .descriptions {
+    font-size: 0.5rem; }
+    .project-item .body-main .descriptions h2 {
+      font-size: 1rem; }
   .contact .body {
     padding: 25% 5% 0; }
     .contact .body h2 {
