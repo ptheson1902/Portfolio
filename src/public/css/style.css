@@ -338,7 +338,7 @@ body {
         text-decoration: none;
         color: #000; }
 
-@media all and (max-width: 415px) {
+@media all and (max-width: 430px) {
   .row {
     margin: 0; }
   .header-bar .logo svg {
